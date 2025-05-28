@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/FiraSans-Black.ttf");
+}
+@font-face {
+  font-family: "light";
+  src: url("../fonts/FiraSans-Light.ttf");
+}
+@font-face {
+  font-family: "very-light";
+  src: url("../fonts/IBMPlexMono-Thin.otf");
+}
+@font-face {
+  font-family: "tall";
+  src: url("../fonts/LeagueGothic-Regular-VariableFont_wdth.ttf");
+}
+* {
+  font-family: "tall";
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  font-family: "Bold";
+  color: var(--theGray);
+}
+
+h2 {
+  font-size: 1.75em;
+  font-family: "Bold";
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+}
+
+h3 {
+  font-family: "light";
+  font-size: 1.25em;
+  color: white;
+}
+
+h4 {
+  font-family: "bold";
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-size: 6em;
+  font-family: "Bold";
+  color: var(--theGray);
+  color: #6ebfae;
+}
+
+p {
+  font-family: "light";
+  font-size: 3vw;
+  color: white;
+}
+
+.white {
+  color: white;
+}/*# sourceMappingURL=universal.css.map */
