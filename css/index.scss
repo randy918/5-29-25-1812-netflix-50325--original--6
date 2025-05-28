@@ -1,13 +1,18 @@
 //>  ████████████████████████████████████  ROOT
 
 @font-face {
-    font-family: "Bold";
-    src: url("../fonts/FiraSansCondensed-Bold.ttf");
+    font-family: "fs-eb";
+    src: url("../fonts/FiraSans-ExtraBold.ttf");
 }
 
 @font-face {
-    font-family: "Light";
-    src: url("../fonts/FiraSansCondensed-Light.otf");
+    font-family: "fs-b";
+    src: url("../fonts/FiraSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "ese-r";
+    src: url("../fonts/EncodeSans_Expanded-Regular.ttf");
 }
 
 :root {
@@ -24,6 +29,7 @@
     --Black2: #3f3f3f;
     --Black3: #575757;
     --Black4: #717171;
+    --Black5: #909090;
 
     --Red0: #03071E;
     --Red1: #370617;
@@ -37,7 +43,7 @@
     --h2-font: 2.9rem;
     --p-font: 1rem;
 
-    --border: transparent;
+    --border: red;
 }
 
 * {
@@ -89,33 +95,50 @@ a:active {
 //>  ████████████████████████████████████  HEADER   
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 4fr;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr;
     // gap: clamp(10px, vw, 200px);;
-    max-width: 960px;
-    padding-left: 40px;
-    padding-right: 40px;
+    // padding-left: 40px;
+    // padding-right: 40px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     margin: 0 auto;
-    margin-top: 40px;
     // padding: 4% 8%;
     z-index: 1000;
     align-items: center;
     justify-content: center;
     outline: 1px solid var(--border);
-    background-color: var(--Red3);
-    
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+
+    background: linear-gradient(-45deg, #DC2F02, #D00000, #9D0208, #6A040F, #370617, #03071E);
+    background-size: 200% 200%;
+    animation: gradient 30s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .header__logo {
     grid-area: 1 / 1 / 3 / 2;
-    outline: 1px solid var(--border);
+    outline: 3px solid var(--border);
     width: 100%;
     max-width: 320px;
     outline: 1px solid var(--border);
+    padding-top: 3vw;
+    ;
+    padding-bottom: 3vw;
+    ;
 
 }
 
@@ -131,8 +154,8 @@ header {
 .header__nav a {
     font-size: clamp(16px, 2.5vw, 24px);
     ;
-    font-family: "Bold";
-    color: transparent;
+    font-family: "ese-r";
+    color: var(--Black5);
     margin-left: clamp(10px, 1.5vw, 20px);
     ;
     margin-right: clamp(10px, 1.5vw, 20px);
@@ -144,11 +167,15 @@ header {
 
 }
 
-.header__nav a:hover {
+[] .header__nav a:hover {
 
     color: white;
 
 }
+
+//>  ████████████████████████████████████  NAV
+
+
 
 #menu-icon {
 
@@ -187,6 +214,37 @@ header {
 
     padding-top: 0;
     margin-top: -4vw;
+
+}
+
+.header__title {
+
+    padding-top: 2vw;
+    position: relative;
+
+    color: var(--Red3);
+    text-shadow: 0.5vw 0.5vw .5vw rgba(0, 0, 0, 0.25), -0.1vw -0.1vw 0.1vw rgba(253, 185, 46, .5);
+    z-index: 25;
+
+}
+
+
+
+.header__container {
+
+    position: relative;
+
+
+}
+
+.header__randall {
+    position: absolute;
+    letter-spacing: 1vw;
+    bottom: 82px;
+    left: 45vw;
+    font-family: "Light";
+    z-index: 100;
+
 
 }
 
@@ -324,6 +382,34 @@ header {
 
 
 
+//>  ████████████████████████████████████  SERVICES N E W
+
+.projects__new {}
+
+#projects__new {}
+
+.projects__new--content {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    // grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.4vw;
+
+}
+
+
+.projects__new--row img {
+
+    max-width: 100%;
+    aspect-ratio: 16 / 16;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+
+
 //>  ████████████████████████████████████  SERVICES MEDIUM
 
 .projects {
@@ -419,6 +505,7 @@ header {
 
 .services__center-text {
     text-align: center;
+    margin-top: 2vw;
 }
 
 .services__center-text h2 {}
