@@ -382,32 +382,6 @@ header {
 
 
 
-//>  ████████████████████████████████████  SERVICES N E W
-
-.projects__new {}
-
-#projects__new {}
-
-.projects__new--content {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    // grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2rem;
-    margin-top: 1.4vw;
-
-}
-
-
-.projects__new--row img {
-
-    max-width: 100%;
-    aspect-ratio: 16 / 16;
-    object-fit: cover;
-    border-radius: 0px;
-}
-
 
 
 //>  ████████████████████████████████████  SERVICES MEDIUM
