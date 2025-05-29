@@ -267,12 +267,15 @@ header {
 
 
 
+//>  ████████████████████████████████████  SECTION
+
+
 //>  ████████████████████████████████████  PORTFOLIO MEDIUM
 
 .portfolio {
 
     background: var(--bg-color2);
-    max-width: 960px;
+    // max-width: 960px;
     width: calc(100% - 80px);
     margin: 0 auto;
     margin-top: clamp(10px, 5vw, 30px);
@@ -389,7 +392,7 @@ header {
 .projects {
 
     background: var(--bg-color2);
-    max-width: 960px;
+    // max-width: 960px;
     width: calc(100% - 80px);
     margin: 0 auto;
     margin-top: clamp(10px, 5vw, 30px);
@@ -459,8 +462,7 @@ header {
 .services {
     // padding-left: 40px;
     // padding-right: 40px;
-    max-width: 960px;
-    width: calc(100% - 80px);
+    // width: calc(100% - 80px);
     margin: 0 auto;
     padding-top: clamp(10px, 4vw, 30px);
 
@@ -544,7 +546,7 @@ header {
 
     .services__content {
         // grid-template-columns: (auto-fit, minmax(300px, auto));
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }

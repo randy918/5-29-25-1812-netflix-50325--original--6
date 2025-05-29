@@ -183,7 +183,6 @@ header {
 
 .portfolio {
   background: var(--bg-color2);
-  max-width: 960px;
   width: calc(100% - 80px);
   margin: 0 auto;
   margin-top: clamp(10px, 5vw, 30px);
@@ -260,8 +259,6 @@ header {
 
 .projects {
   background: var(--bg-color2);
-  max-width: 960px;
-  width: calc(100% - 80px);
   margin: 0 auto;
   margin-top: clamp(10px, 5vw, 30px);
   margin-top: 2vw;
@@ -322,8 +319,6 @@ header {
 }
 
 .services {
-  max-width: 960px;
-  width: calc(100% - 80px);
   margin: 0 auto;
   padding-top: clamp(10px, 4vw, 30px);
 }
@@ -338,6 +333,7 @@ header {
 
 .services__center-text {
   text-align: center;
+  margin-top: 2vw;
 }
 
 .services__box {
@@ -385,6 +381,6 @@ header {
 
 @media (width >= 868px) {
   .services__content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }/*# sourceMappingURL=index.css.map */
