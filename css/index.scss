@@ -17,8 +17,8 @@
 
 :root {
     --text-color: #fff;
-    --bg-color: #1b1f24;
-    --bg-color2: #22282;
+    --bg-color: lch(11.55% 4.03 263.99);
+    --bg-color2: #222822;
     --main-color: #13bbff;
     --main-color2: #c3cad5;
     --theGray: #888888;
@@ -64,7 +64,8 @@
 body {
 
     color: var(--text-color);
-    background: var(--bg-color);
+    background: red;
+    
 
 }
 
