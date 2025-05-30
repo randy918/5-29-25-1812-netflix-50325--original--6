@@ -251,19 +251,6 @@ header {
 
 //>  ████████████████████████████████████  DIALOG MODAL
 
-.modal {
-
-    display: none;
-    position: fixed;
-    padding: 0.5 rem;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    background: red;
-    border-radius: 0.25rem;
-    z-index: 10;
-
-}
 
 
 
@@ -271,119 +258,6 @@ header {
 
 
 //>  ████████████████████████████████████  PORTFOLIO MEDIUM
-
-.portfolio {
-
-    background: var(--bg-color2);
-    // max-width: 960px;
-    width: calc(100% - 80px);
-    margin: 0 auto;
-    margin-top: clamp(10px, 5vw, 30px);
-    margin-top: 2vw;
-
-}
-
-.portfolio__content {
-    // max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    // grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2rem;
-    margin-top: 1.4vw;
-}
-
-.portfolio__row img {
-
-    max-width: 100%;
-    aspect-ratio: 16 / 10;
-    object-fit: cover;
-    border-radius: 0px;
-}
-
-.portfolio__row-icon {
-    display: flex;
-    align-items: center;
-
-
-}
-
-.portfolio__row video {
-
-    max-width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    border-radius: 6px;
-
-
-
-}
-
-
-.portfolio__row video {
-
-    // max-width: 760px;
-
-
-}
-
-.iconify-icon {
-
-    width: 3vw;
-
-}
-
-.portfolio__row-icon {
-
-    display: grid;
-    flex-direction: row;
-
-}
-
-.portfolio__row-icon i {
-
-    color: red;
-    font-size: 3vw;
-}
-
-.portfolio__row-icon--1 i {
-
-    font-size: 2vw;
-
-}
-
-
-.portfolio__row-text--1 {
-    display: flex;
-
-    width: 4vw;
-
-}
-
-.portfolio__svg--pub {
-
-    height: clamp(16px, 2.5vw, 24px);
-
-}
-
-.portfolio__title {
-
-    color: white;
-    font-size: clamp(16px, 2.5vw, 24px);
-    font-family: "Bold";
-    display: inline-block;
-
-
-}
-
-.portfolio__bold {
-
-    color: red;
-    font-family: "Bold";
-
-}
-
-
 
 
 
@@ -408,6 +282,7 @@ header {
     align-items: center;
     gap: 2rem;
     margin-top: 1.4vw;
+    
 
 }
 
